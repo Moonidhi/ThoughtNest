@@ -15,11 +15,6 @@ const App = () => {
   return (
     <div className="app-shell min-h-screen bg-ink text-parchment">
 
-      {/* 🔥 DEPLOYMENT TEST BANNER */}
-      <div className="w-full bg-red-600 text-white text-center py-3 text-xl font-bold tracking-wide">
-        🚀 TEST VERSION ACTIVE 🚀
-      </div>
-
       {showNav && <Navbar totalSeconds={totalSeconds} />}
 
       <Routes>
