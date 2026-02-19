@@ -14,9 +14,19 @@ const App = () => {
 
   return (
     <div className="app-shell min-h-screen bg-ink text-parchment">
+
+      {/* 🔥 DEPLOYMENT TEST BANNER */}
+      <div className="w-full bg-red-600 text-white text-center py-3 text-xl font-bold tracking-wide">
+        🚀 TEST VERSION ACTIVE 🚀
+      </div>
+
       {showNav && <Navbar totalSeconds={totalSeconds} />}
+
       <Routes>
-        <Route path="/" element={<Home onTotalSecondsChange={setTotalSeconds} />} />
+        <Route
+          path="/"
+          element={<Home onTotalSecondsChange={setTotalSeconds} />}
+        />
         <Route path="/read/:id" element={<ReadingMode />} />
         <Route path="/saved" element={<Saved />} />
         <Route path="/submit" element={<SubmitArticle />} />
