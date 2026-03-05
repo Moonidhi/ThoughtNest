@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lora:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen bg-grain text-slate-100 font-sans;
+}
+
+.paper-card {
+  @apply rounded-2xl border border-stone-600/40 bg-gradient-to-b from-paper to-parchment shadow-paper;
+}
+
+.paper-texture {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 0.9px, transparent 0.9px);
+  background-size: 4px 4px;
+}
+
+.input-dark {
+  @apply w-full rounded-xl border border-mist bg-slate/80 px-4 py-3 text-sm text-slate-100 outline-none transition focus:border-gold;
+}
+
+.tag-pill {
+  @apply rounded-full border border-mist px-3 py-1 text-xs text-slate-300;
+}
